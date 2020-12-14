@@ -9,48 +9,56 @@
       integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="src/style.css"/>
     <title>Vanilla Weather App</title>
   </head>
   <body>
     <div class="container">
       <div class="weather-app-wrapper">
-        <div class="weather-app">
-          <form id="search-form">
-            <div class="row">
-              <div class="col-9">
-                <input
-                  type="text"
-                  class="form-control"
-                  placeholder="Enter a city..."
-                  autofocus="on"
-                  autocomplete="off"
-                  id="city-input"
-                />
-              </div>
-              <div class="col-3">
-                <input
-                  type="submit"
-                  name="search"
-                  id="search-button"
-                  class="btn btn-primary w-100"
-                />
-              </div>
+          <div class="weather-app">
               <div class="weatherNow">
-                <h1>City</h1>
-                <ul>
-                  <li id="day">Monday</li>
-                  <li>last updated: <span id="time">14:00</span></li>
-                </ul>
-                <span id="weather-icon"><img src="" alt="" /> </span>
-                <p><strong id="temperature">14</strong> °C | °F</p>
-                <div id="description">
-                    <ul>
-                        <li>
-                            Percipitation: 2%
-                        </li>
+                  <form id="search-form">
+                      <div class="row">
+                          <div class="col-9">
+                              <input
+                              type="text"
+                              class="form-control"
+                              placeholder="Enter a city..."
+                              autofocus="on"
+                              autocomplete="off"
+                              id="city-input"
+                                />
+                            </div>
+                          <div class="col-3">
+                              <input
+                              type="submit"
+                              value="search"
+                              id="search-button"
+                              class="btn btn-primary w-100"
+                              />
+                            </div>
+                        </div>    
+                    </form> 
+                  <h1>Graz</h1>
+                  <p id="today"><span id="day">Monday</span>, <span id="time">14:00</span></p>
+                  <img src="https://ssl.gstatic.com/onebox/weather/64/fog.png" alt="" id="weather-icon"/>
+                  <p class="text-center">
+                      <span id="temperature">14</span>
+                    </p>
+                    <p class="text-center" id="units">
+                        <span id="celsius"><a href="">°C</a></span>
+                            | 
+                        <span><a href="">°F</a></span>
+                    </p>
+                  <div id="description">
+                      <ul>
+                          <li>Percipitation: 2%</li>
                         <li>Wind: 4km/h</li>
-                    </ul>
+                        </ul>
+                    </div>
+                </div>    
                 <div id="forecast">
                     <hr/>
                     <div class="row">
@@ -58,35 +66,35 @@
                         <div class="col-2">10°</div>
                         <div class="col-2">icon</div>
                     </div>
-                        <div class="row">
-                        <div class="col-8">15:00</div>
-                        <div class="col-2">10°</div>
-                        <div class="col-2">icon</div>
-                    </div>
-                        <div class="row">
-                        <div class="col-8">15:00</div>
-                        <div class="col-2">10°</div>
-                        <div class="col-2">icon</div>
-                    </div>
+                    <hr/>
                     <div class="row">
                         <div class="col-8">15:00</div>
                         <div class="col-2">10°</div>
                         <div class="col-2">icon</div>
                     </div>
+                    <hr/>
                     <div class="row">
-                        <div class="col-8">15:00</div>
-                        <div class="col-2">10°</div>
-                        <div class="col-2">icon</div>
-                    </div>
-                </div>
-                </div>
-              </div>
+                       <div class="col-8">15:00</div>
+                       <div class="col-2">10°</div>
+                       <div class="col-2">icon</div>
+                   </div>
+                   <hr/>
+                   <div class="row">
+                       <div class="col-8">15:00</div>
+                       <div class="col-2">10°</div>
+                       <div class="col-2">icon</div>
+                   </div>
+                   <hr/>
+                   <div class="row">
+                       <div class="col-8">15:00</div>
+                       <div class="col-2">10°</div>
+                       <div class="col-2">icon</div>
+                   </div>
+               </div>
             </div>
-          </form>
         </div>
-      </div>
     </div>
     <p><span id="copyright"> <a href="">Open-source code</a> by <a href="https://www.linkedin.com/in/vivica-ramdawon-886847116" target="_blank">Vivica Ramdawon</a> </span></p>
-    <script src="script.js"></script>
+    <script src="src/script.js"></script>
   </body>
 </html>
