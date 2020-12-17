@@ -1,68 +1,107 @@
 .container {
-    background-color: #9c27b0;
-    border: 4px solid #7b1fa2;
-    border-radius: 15px;
-    color: #fff;
-    font-family: "Quicksand", sans-serif;
-    max-width: 35%;
-    margin: 20px auto;
-    padding: 25px;
+  background-color: #9c27b0;
+  border: 4px solid #7b1fa2;
+  border-radius: 15px;
+  color: #fff;
+  font-family: "Quicksand", sans-serif;
+  max-width: 30%;
+  margin: 20px auto;
+  padding: 30px;
+  box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.2);
 }
 
 #search-form {
-    margin-bottom: 25px;
+  margin-bottom: 25px;
 }
 
 .btn {
-    background-color: #7b1fa2;
-    border: 1px solid #fff;
-    transition: all 150ms ease-in-out;
+  background-color: #7b1fa2;
+  border: 1px solid #fff;
+  transition: all 150ms ease-in-out;
 }
 
 .btn:hover {
-    background-color: #ffc107;
-    border-color: #fff;
-    cursor: pointer;
+  background-color: #ffc107;
+  border-color: #fff;
+  cursor: pointer;
 }
 
 #today {
-    position: relative;
-    top: -10px;
+  position: relative;
+  top: -10px;
+  font-size: 18px;
 }
 
 #weather-icon {
-    display: block;
-    margin: 0 auto;
-    width: 125px;
+  display: block;
+  margin: 0 auto;
+  width: 125px;
+}
+#temperature-field {
+  margin-bottom: 0;
 }
 
 #temperature {
-    font-size: 100px;
-    position: relative;
-    right: 25px;
-    line-height: 1;
+  font-size: 110px;
+  position: relative;
+  right: 20px;
+  line-height: 1;
 }
 
 #units {
-    font-size: 20px;
-    font-weight: 500;
-    position: relative;
-    top: -108px;
-    left: 50px;
+  font-size: 20px;
+  font-weight: 600;
+  position: relative;
+  top: -100px;
+  left: 55px;
 }
 
 #units a {
-    color: #ffc107;
-    text-decoration: none;
-    transition: all 150ms ease-in-out;
+  color: #ffc107;
+  text-decoration: none;
+  transition: all 150ms ease-in-out;
 }
 
 #units a:active {
-    color: #fff;
+  color: #fff;
 }
 
 #units a:hover {
-    color: #fff;
-    cursor: pointer;
+  color: #7b1fa2;
+  cursor: pointer;
 }
 
+#details {
+  font-size: 15px;
+  text-align: center;
+  padding: 0px 20px 30px 20px;
+}
+
+#description::first-letter {
+  text-transform: uppercase;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid #ffc107;
+  border-radius: 5px;
+  opacity: 1;
+}
+
+#forecast .row .col-2 {
+  text-align: center;
+}
+
+#forecast .row .col-8 {
+  padding-left: 25px;
+}
+
+#copyright {
+  text-align: center;
+  margin-bottom: 100px;
+}
+
+#copyright a {
+  color: #7b1fa2;
+  text-decoration: none;
+}
