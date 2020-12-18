@@ -64,20 +64,29 @@ h1 {
   right: 40px;
 }
 
+#units .active {
+  color: #fff;
+  cursor: default;
+  
+}
+
+#units .active:hover {
+  color: #fff;
+  cursor: default;
+}
+
 #units a {
   color: #ffc107;
   text-decoration: none;
   transition: all 150ms ease-in-out;
 }
 
-#units a:active {
-  color: #fff;
-}
 
 #units a:hover {
   color: #7b1fa2;
   cursor: pointer;
 }
+
 
 #details {
   font-size: 14px;

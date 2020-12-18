@@ -116,6 +116,9 @@ function showTemperature(response) {
         event.preventDefault();
         let fahrenheitTemperature = document.querySelector("#temperature");
         fahrenheitTemperature.innerHTML = Math.round((temperature*9)/5+32);
+
+        celsius.classList.remove("active");
+        fahrenheit.classList.add("active");
     }
 
     let fahrenheit = document.querySelector("#fahrenheit-link");
@@ -126,6 +129,9 @@ function showTemperature(response) {
         event.preventDefault();
         let celsiusTemperature = document.querySelector("#temperature");
         celsiusTemperature.innerHTML = temperature;
+
+        celsius.classList.add("active");
+        fahrenheit.classList.remove("active");
     }
 
 
