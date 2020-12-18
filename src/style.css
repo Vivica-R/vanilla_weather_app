@@ -26,34 +26,41 @@
   cursor: pointer;
 }
 
+h1 {
+  text-transform: capitalize;
+}
+
 #today {
   position: relative;
   top: -10px;
   font-size: 18px;
 }
 
-#weather-icon {
-  display: block;
-  margin: 0 auto;
-  width: 125px;
+#now {
+  margin: 10px;
 }
+
+#weather-icon {
+  width: 200px;
+}
+
 #temperature-field {
-  margin-bottom: 0;
+  margin-bottom: 0px;
 }
 
 #temperature {
   font-size: 110px;
   position: relative;
-  right: 20px;
-  line-height: 1;
+  top: 18px;
+  left: 10px;
 }
 
 #units {
   font-size: 20px;
   font-weight: 600;
   position: relative;
-  top: -100px;
-  left: 55px;
+  top: 22px;
+  right: 45px;
 }
 
 #units a {
@@ -74,7 +81,7 @@
 #details {
   font-size: 15px;
   text-align: center;
-  padding: 0px 20px 30px 20px;
+  padding: 10px 20px 40px 20px;
 }
 
 #description::first-letter {

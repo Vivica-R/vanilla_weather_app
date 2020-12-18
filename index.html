@@ -15,52 +15,59 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="src/style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <title>Vanilla Weather App</title>
   </head>
   <body>
     <div class="container">
       <div class="weather-app-wrapper">
         <div class="weather-app">
-          <div class="weatherNow">
-            <form id="search-form">
-              <div class="row">
-                <div class="col-9">
-                  <input
-                    type="text"
-                    class="form-control"
-                    placeholder="Enter a city..."
-                    autofocus="on"
-                    autocomplete="off"
-                    id="city-input"
-                  />
-                </div>
-                <div class="col-3">
-                  <input
-                    type="submit"
-                    value="search"
-                    id="search-button"
-                    class="btn btn-primary w-100"
-                  />
-                </div>
+          <form id="search-form">
+            <div class="row">
+              <div class="col-9">
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Enter a city..."
+                  autofocus="on"
+                  autocomplete="off"
+                  id="search-city-input"
+                />
               </div>
-            </form>
+              <div class="col-3">
+                <input
+                  type="submit"
+                  value="search"
+                  id="search-button"
+                  class="btn btn-primary w-100"
+                />
+              </div>
+            </div>
+          </form>
+          <div class="weatherNow">
             <h1>Graz</h1>
             <p id="today">
-              <span id="day">MONDAY</span>, <span id="time">14:00</span>
+              <span id="day"></span>, <span id="time">14:00</span>
             </p>
-            <img
-              src="https://ssl.gstatic.com/onebox/weather/64/fog.png"
-              alt=""
-              id="weather-icon"
-            />
-            <p class="text-center" id="temperature-field">
-              <span id="temperature">14</span>
-            </p>
-            <p class="text-center" id="units">
-              <span id="celsius"><a href="">°C</a></span>
-              |
-              <span><a href="">°F</a></span>
-            </p>
+            <div class="row" id="now">
+              <div class="col-1"></div>
+              <div class="col-4">
+                <img src="" alt="" id="weather-icon" class="center-block" />
+              </div>
+              <div class="col-4">
+              <p class="text-center" id="temperature-field">
+                <span id="temperature">34</span>
+              </p>
+              </div>
+              <div class="col-2">
+              <p class="text-center" id="units">
+                <span><a href="#" id="celsius-link">°C</a></span>
+                |
+                <span><a href="#" id="fahrenheit-link">°F</a></span>
+              </p>
+            </div>
+            <div class="col-1"></div>
+            </div>
             <div id="details">
               <div class="row" id="details-titles">
                 <div class="col-4">DESCRIPTION</div>
@@ -68,9 +75,9 @@
                 <div class="col-4">WIND</div>
               </div>
               <div class="row" id="details-data">
-                <div class="col-4" id="description"> clear sky</div>
-                <div class="col-4" id="humidity">10%</div>
-                <div class="col-4" id="wind">4 km/h</div>
+                <div class="col-4" id="description"></div>
+                <div class="col-4"><span id="humidity"></span> %</div>
+                <div class="col-4"><span id="wind"></span> km/h</div>
               </div>
             </div>
           </div>
@@ -110,14 +117,13 @@
       </div>
     </div>
     <p id="copyright">
-      <span>
-        <a href="">Open-source code</a> by
-        <a
-          href="https://www.linkedin.com/in/vivica-ramdawon-886847116"
-          target="_blank"
-          >Vivica Ramdawon</a
-        >
-      </span>
+      <a href="">Open-source code</a> by
+      <a
+        href="https://www.linkedin.com/in/vivica-ramdawon-886847116"
+        target="_blank"
+        >Vivica Ramdawon</a
+      >
+      🙋🏽‍♀️
     </p>
     <script src="src/script.js"></script>
   </body>
