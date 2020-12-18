@@ -95,33 +95,57 @@ hr {
   opacity: 1;
 }
 
-#forecast-titles .row{
-  font-size: 14px;
+#forecast-titles .row {
   line-height: 0%;
-  text-align: center;
-  padding-right:5px ;
-
+  padding-right: 15px;
 }
 
+#forecast-titles .row .col-1 {
+  font-size: 14px;
+  text-align: center;
+  padding: 0px;
+}
+
+#forecast-titles .row .col-2 {
+  font-size: 14px;
+  text-align: center;
+  padding: 0px;
+}
+
+#forecast .row {
+  padding-right: 15px;
+  padding-left: 5px;
+}
 
 #forecast .row .col-1 {
   height: 25px;
   text-align: center;
+  padding: 0;
 }
 
 #forecast .row .col-2 {
   height: 25px;
   text-align: center;
+  padding: 0;
 }
 
-#forecast .row .col-8 {
+#forecast .row .col-7 {
+  font-size: 14px;
   height: 25px;
+  text-transform: uppercase;
 }
 
 #forecast-icon {
   max-width: 60px;
   position: relative;
   top: -12px;
+}
+
+.celsiusForecast {
+  font-size: 10px;
+  position: relative;
+  top: -5px;
+  right: -2px;
 }
 
 #copyright {

@@ -53,15 +53,20 @@ function showForecast(response) {
 
     for (let index = 1; index <= 5; index++) {
         forecast = response.data.daily[index];
+        let maxTemp = Math.round(forecast.temp.max);
+        let minTemp = Math.round(forecast.temp.min);
+
         forecastElement.innerHTML += `            
         <hr />
         <div class="row">
-            <div class="col-8">${formatDay(forecast.dt*1000)}</div>
+            <div class="col-7">${formatDay(forecast.dt*1000)}</div>
             <div class="col-2"><img src="http://openweathermap.org/img/wn/${forecast.weather[0].icon}.png" alt="${forecast.weather[0].description}" id="forecast-icon"/></div>
-            <div class="col-1">${Math.round(forecast.temp.max)}°</div> 
-            <div class="col-1">${Math.round(forecast.temp.min)}°</div>
-        </div>`
+            <div class="col-2">${maxTemp}<span class="celsiusForecast">°C</span></div> 
+            <div class="col-1">${minTemp}<span class="celsiusForecast">°C</span></div>
+        </div>`;
         
+
+
     }
 
 
