@@ -34,6 +34,7 @@ h1 {
   position: relative;
   top: -10px;
   font-size: 18px;
+  margin: 0;
 }
 
 #now {
@@ -52,7 +53,7 @@ h1 {
   font-size: 110px;
   position: relative;
   top: 18px;
-  left: 10px;
+  left: 15px;
 }
 
 #units {
@@ -60,7 +61,7 @@ h1 {
   font-weight: 600;
   position: relative;
   top: 22px;
-  right: 45px;
+  right: 40px;
 }
 
 #units a {
@@ -79,7 +80,7 @@ h1 {
 }
 
 #details {
-  font-size: 15px;
+  font-size: 14px;
   text-align: center;
   padding: 0px 20px 70px 25px;
 }
